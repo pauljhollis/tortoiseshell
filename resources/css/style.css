@@ -51,7 +51,7 @@ nav {
   margin-right: 2rem;
 }
 
-.mobileMenu {
+.mobileShow {
   display: none;
 }
 
@@ -134,4 +134,56 @@ footer img {
   height: 1.5rem;
   width: auto;
   margin: 0 1rem 0 0;
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 960px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .banner {
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+  .banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .menu .mobileHide {
+    display: none;
+  }
+
+  .menu .mobileShow {
+    display: list-item;
+  }
+
+  .banner {
+    justify-content: center;
+    width: 100%;
+  }
 }
