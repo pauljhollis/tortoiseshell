@@ -5,6 +5,9 @@
 html {
   font-family: Helvetica;
   font-size: 18px;
+}
+
+body {
   line-height: 1.4;
 }
 
@@ -55,15 +58,15 @@ nav {
 .banner {
   justify-content: flex-end;
   margin-top: 10rem;
+  line-height: 1.2;
 }
 
 .banner h1 {
-  padding: 1.5rem 5rem;
-  font-size: 2rem;
-  line-height: 1.2;
   font-weight: bold;
   background-color: white;
   margin-right: -2rem;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
 }
 
 /* Main Section */
@@ -90,9 +93,45 @@ nav {
 
 .offerBox img {
   width: 5rem;
+  height: auto;
 }
 
 img.paper {
   width: 3.5rem;
+  height: auto;
+}
 
+.info {
+  margin: 3rem 0;
+  justify-content: center;
+}
+
+.infoBox {
+  max-width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.infoBox h3 {
+  max-width: 12.5rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  background-color: azure;
+  align-items: center;
+  padding: 4rem;
+  justify-content: flex-start;
+}
+
+footer img {
+  height: 1.5rem;
+  width: auto;
+  margin: 0 1rem 0 0;
 }
