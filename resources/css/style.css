@@ -57,15 +57,15 @@ nav {
 
 .banner {
   justify-content: flex-end;
-  margin-top: 10rem;
-  line-height: 1.2;
 }
 
-.banner h1 {
+.badge {
   font-weight: bold;
   background-color: white;
   margin-right: -2rem;
   padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  line-height: 1.2;
   font-size: 2rem;
 }
 
@@ -107,13 +107,13 @@ img.paper {
 }
 
 .infoBox {
-  max-width: 35%;
+  width: 35%;
   margin-right: 5%;
   margin-bottom: 4rem;
 }
 
 .infoBox h3 {
-  max-width: 12.5rem;
+  width: 12.5rem;
   background-color: cadetblue;
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
@@ -148,14 +148,15 @@ footer img {
     width: 100%;
   }
 
-  .banner {
+  .badge {
     margin-top: 5rem;
-    padding: 0.75rem 4rem;
     margin-right: 2rem;
+    padding: 0.75rem 4rem;
   }
 
-  .banner h1 {
+  .badge h1 {
     font-size: 1.33rem;
+    padding: 1rem 0;
   }
 }
 
@@ -182,14 +183,59 @@ footer img {
     display: list-item;
   }
 
-  .banner {
-    justify-content: center;
-    width: 100%;
-    margin: 9rem auto 0 auto;
+  .badge {
     padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    text-align: center;
   }
 
-  .banner h1 {
+  .badge h1 {
     font-size: 1rem;
   }
+
+  .offer {
+    flex-direction: column;
+    margin: 3.77rem 0;
+    align-items: center;
+  }
+
+  .offer span {
+    font-size: 0.77rem;
+    margin-bottom: 1.54rem;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoBox {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .infoBox h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .infoBox p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+    padding: 0 0.25rem;
+  }
+
+  div.infoBox.philo {
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
 }
